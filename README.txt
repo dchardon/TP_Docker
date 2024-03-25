@@ -1,9 +1,15 @@
 ﻿Etape 2: Utilisation de docker compose
+Utilisez docker compose pour déployer vos 4 services nginx et votre loadbalancer.
 
 Sur le terminal : se rendre dans le dossier où se trouve le fichier compose.yaml
 docker compose « nom_du_fichier » up
 
 Etape 3: Dockeriser une application existante
+Nous souhaitons partir d'une application Web de détection de visage.
+Src dans ce repository
+https://github.com/barais/TPDockerSampleApp
+
+Construisez le fichier docker file permettant de créer l'image docker pour cette application.
 Télécharger le zip de l’application et l’extraire. Créer un Dockerfile.
 
 Sur le terminal : se rendre dans le dossier où se trouve le Dockerfile
