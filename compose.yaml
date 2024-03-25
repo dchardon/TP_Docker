@@ -1,0 +1,32 @@
+services:
+  ngix-proxy:
+    image: jwilder/nginx-proxy
+    ports:
+      - "8080:80"
+    working_dir: /app/
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+         
+  nginx-app1:
+    image: nginx
+    container_name: nginx-app1
+    environment:
+      VIRTUAL_HOST: m
+
+  nginx-app2:
+    image: nginx
+    container_name: nginx-app2
+    environment:
+      VIRTUAL_HOST: m
+
+  nginx-app3:
+    image: nginx
+    container_name: nginx-app3
+    environment:
+      VIRTUAL_HOST: m
+
+  nginx-app4:
+    image: nginx
+    container_name: nginx-app4
+    environment:
+      VIRTUAL_HOST: m
